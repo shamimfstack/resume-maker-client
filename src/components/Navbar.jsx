@@ -7,7 +7,7 @@ const Navbar = () => {
             <NavLink
               to="/"
               className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
+                isPending ? "pending" : isActive ? "text-purple-600 underline" : ""
               }
             >
               Home
@@ -15,20 +15,30 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/"
+              to="/signIn"
               className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
+                isPending ? "pending" : isActive ? "text-purple-600 underline" : ""
               }
             >
               Sign In
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/templates"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-purple-600 underline" : ""
+              }
+            >
+              Templates
+            </NavLink>
+          </li>
     </>
   return (
-    <div>
-      <nav>
+    <div className="py-5">
+      <nav className="flex justify-between">
         <Logo></Logo>
-        <ul>
+        <ul className="flex gap-8">
           {navOptions}
         </ul>
       </nav>
