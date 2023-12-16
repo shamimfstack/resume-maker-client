@@ -3,6 +3,7 @@ import MainLayout from "../MainLayout/MainLayout";
 import Home from "../Pages/Home/Home/Home";
 import SignIn from "../Pages/SignIn/SignIn/SignIn";
 import Templates from "../Pages/Templates/Templates/Templates";
+import ResumeForm from "../Pages/ResumeForm/ResumeForm";
 
 
 const Routes = createBrowserRouter([
@@ -21,6 +22,10 @@ const Routes = createBrowserRouter([
             {
                 path: 'templates',
                 element: <Templates></Templates>
+            },
+            {
+                path: 'resumeForm',
+                element: <ResumeForm></ResumeForm>
             }
         ]
     }

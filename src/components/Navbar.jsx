@@ -33,6 +33,16 @@ const Navbar = () => {
               Templates
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/resumeForm"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-purple-600 underline" : ""
+              }
+            >
+              Create Resume
+            </NavLink>
+          </li>
     </>
   return (
     <div className="py-5">

@@ -13,7 +13,7 @@ const Templates = () => {
     <div>
       <h2>All Templates Here</h2>
       {/* main div */}
-      <div className="max-w-5xl mx-auto bg-gray-100">
+      <div className="max-w-5xl mx-auto bg-gray-100 mt-5">
         {/* header section */}
         <div className="template-header flex justify-between px-5 py-4 border-b-4">
           <div>
@@ -26,7 +26,7 @@ const Templates = () => {
               <img className="w-5" src={phoneImg} alt="" />
             </div>
             <div className="flex items-center gap-2 mb-2">
-              <p>+9999999999</p>
+              <p>mail@gmail.com</p>
               <img className="w-5" src={emailImg} alt="" />
             </div>
             <div className="flex items-center gap-2">
